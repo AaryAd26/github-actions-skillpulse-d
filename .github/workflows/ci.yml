@@ -4,13 +4,12 @@ on:
     push:
         branches: [main]
         
-
 jobs:
-    run-and-deploy:
-        runs-on: ubuntu-latest
+  build-and-push:
+    runs-on: ubuntu-latest
 
-        steps:
-            - uses: action/action@v4
+    steps:
+      - uses: action/action@v4
 
 
-            - uses: docker/setup-buildx-action@v4
+      - uses: docker/setup-buildx-action@v4
